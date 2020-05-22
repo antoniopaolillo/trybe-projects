@@ -1,0 +1,27 @@
+.ingredients-title {
+  align-items: flex-end;
+  display: flex;
+  font-size: 26px;
+  font-style: normal;
+  height: 30px;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  margin-left: 0.4em;
+}
+
+.ingredients-container {
+  background: #ececec;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 0.3em;
+  width: 93%;
+}
+
+.ingredient {
+  align-items: flex-end;
+  color: black;
+  display: flex;
+  font-size: 21px;
+  font-style: normal;
+  line-height: 12px;
+}

@@ -1,0 +1,363 @@
+* {
+    padding: 0;
+    margin: 0;
+    cursor: url("imagens/pointer.png"), auto;
+}
+
+body {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #0B0704;
+}
+
+main {
+    background-color: #FFF8EE;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.jornal {
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.headerImagens {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#imagem1Header {
+    display: none;
+}
+
+#imagem2Header {
+    width: 100%;
+    position: relative;
+    bottom: 28px;
+}
+
+header p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.hrDouble {
+    border-top: 1px double #1c1915;
+    border-bottom: 0.1875em solid #1c1915;
+    height: 0.125em;
+    margin: 0.5em auto;
+}
+
+.novidadeCabecalho {
+    margin-top: 0.5em;
+    background-color: #0B0704;
+    color: #FFF8EE;
+    font-size: 1.8em;
+}
+
+.noticiaNovidadeCabecalho {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0.3em;
+    font-weight: bold;
+}
+
+.noticiaNovidade div {
+    outline: 1px solid black;
+    margin-bottom: 2%;
+}
+
+.novidadeTexto {
+    font-size: 1.1em;
+    margin: 0.3em;
+}
+
+.linkNoticias { 
+    background-color: #0B0704;
+    text-align: end;
+}
+
+.linkNoticias a {
+    color: #FFF8EE;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+article {
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    outline: 1px solid black;
+}
+
+article h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.noticiaPrincipalCabecalho {
+    font-size: 1.0em;
+    font-weight: bold;
+    margin: 0.15em;
+}
+
+.noticiaPrincipalTexto {
+    font-size: 1.0em;
+    margin: 0.6em;
+    text-align: center;
+}
+
+.dolar {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+
+.dolar:hover {
+    animation: dolarRodando 5s 2 alternate steps(360);
+}
+
+.linkVideoCapaInvisibilidade {
+    cursor: pointer;
+}
+
+.capa, .silence {
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+
+.capa:hover {
+    animation: capaVoando 3s 2 alternate steps(360);
+}
+
+.bonus {
+    background-color: #0B0704;
+    color: #FFF8EE;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.silence:hover {
+    animation: silence 3s steps(360);
+}
+
+
+.lua {
+    width: 10%;
+    animation: lua ease-in 5s 3 alternate 3s forwards;
+}
+
+.lua:hover {
+    animation-play-state: paused;
+}
+
+.estrela {
+    animation: estrela 5s infinite alternate steps(360);
+}
+
+.aumentarTamanhoArtigo {
+    animation: tamanhoArtigo 4s alternate 2;
+    transition-timing-function: ease;
+}
+
+.anuncio {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vassouraAnuncioAdicionar {
+    animation: vassoura 10s steps(360) ;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0B0704;   
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 2em;
+    margin-top: 1.2em;
+    text-align: end;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+section div {
+    text-align: center;
+}
+
+@keyframes vassoura {
+    from {
+        transform: scale(1);
+    }
+    20% {  
+        transform: scale(2);
+    }
+    40% {  
+        transform: scale(2) rotate(360deg);
+    }
+    60% {
+        transform: scale(2) translateX(100px) translateY(-100px);
+    }
+    80% {
+        transform: scale(2) translateX(100px) translateY(-100px) skew(160deg);
+    }
+    to {
+        transform: scale(2)  skew(160deg) translateX(1000px) translateY(-1000px);
+    }
+}
+
+@media only screen and (max-width: 759px) and (orientation: landscape){
+    #imagem1Header {
+        display: block;
+    }
+    
+    .headerImagens {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .dolar {
+        width: 70%;
+        margin-bottom: 0;
+        margin: auto;
+    }
+    
+    .capa, .silence {
+        width: 35%;
+        margin-bottom: 0;
+        margin: auto;
+    }
+    
+    section div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}  
+
+@media only screen and (min-width: 760px) {
+    
+    main {
+        width: 95%;
+        margin: auto;
+    }
+    
+    #imagem1Header {
+        display: block;
+        width : 10%;
+    }
+    
+    .headerImagens {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #imagem2Header {
+        width: 70%;
+        height: 50%;
+    }
+    
+    section div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .estrela, .lua {
+        width: 5%;
+    }
+    
+    .capa, .silence {
+        width: 35%;
+    }
+    
+    #vassouraAnuncio {
+        width: 16%;
+        cursor: pointer;
+    }
+    
+    .dolar, .capa, .silence {
+        margin: 0;
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
+    
+    @keyframes tamanhoArtigo {
+        from {
+            transform: scale(1, 1);
+            font-weight: 100;
+        }
+        
+        to {
+            transform: scale(1.5, 1.5);
+            font-weight: 900;
+        }
+    }
+
+    @keyframes lua {
+        from {
+            margin-left: 0%;
+        }
+        to {
+            margin-left: 91%;
+        }
+    }
+    
+    @keyframes estrela {
+        from {
+            margin-left: 0%;
+            transform: rotate(0deg);
+        }
+        to {
+            margin-left: 91%;
+            transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes capaVoando {
+        from {
+            opacity: 1;
+        }
+        
+        to {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes dolarRodando {
+        from {
+            transform: rotate(0deg);
+        }
+        
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes silence {
+        0% {
+            transform: skew(0deg);
+        }
+        100% {
+            transform: skew(180deg);
+        }
+    }
+}

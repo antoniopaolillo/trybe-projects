@@ -1,0 +1,67 @@
+
+.container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.tabelaQueSeraPreenchida{
+    border-collapse: collapse;
+}
+.coresfixas{
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+.elemento{
+    width: 40px;
+    height: 40px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.corselecionada{
+    width: 400px;
+    height: 80px;
+    border-style: inset;
+    border-width: 2px;
+    text-align: center;
+    margin-top: 80px;
+    background-color: black;
+}
+.texto{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.color{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-top: 100px;
+}
+.botoes{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    color: black;
+}
+.tabelas{
+    border-width: 3px;
+
+    border-style: solid;
+}
+.cabecalho{
+
+    margin-bottom: 7%;
+}
+#tamanhoquadrado{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+}

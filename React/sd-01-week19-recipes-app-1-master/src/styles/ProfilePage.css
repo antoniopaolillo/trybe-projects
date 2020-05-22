@@ -1,0 +1,22 @@
+.button {
+  background-color: lightgrey;
+  border: none;
+  font-size: 6mm;
+  height: 50px;
+  margin: 10px;
+  width: 250px;
+}
+
+.every-elements {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 6mm;
+  margin-top: 30px;
+}
+
+.footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}

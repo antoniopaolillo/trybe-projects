@@ -1,0 +1,22 @@
+.Header_input {
+  align-items: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5em;
+}
+
+.text-input {
+  font-size: 17px;
+  height: 26px;
+  width: 97%;
+}
+
+.radios-input {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  height: 30px;
+  text-align: center;
+}

@@ -1,0 +1,41 @@
+.image-details {
+  height: 10em;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.details-name {
+  align-items: flex-end;
+  display: flex;
+  font-size: 30px;
+  font-style: normal;
+  width: 100%;
+}
+
+.details-name-share-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+  justify-content: space-between;
+  margin: 0.4em;
+}
+
+.details-category {
+  align-items: flex-end;
+  color: darkgrey;
+  display: flex;
+  font-size: 21px;
+  font-style: normal;
+  height: 25px;
+  line-height: 25px;
+  margin-left: 0.4em;
+  width: 73px;
+}
+
+.icons-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}

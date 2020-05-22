@@ -1,0 +1,11 @@
+.Header_separating-icons {
+  align-items: center;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.icon_search {
+  visibility: hidden;
+}

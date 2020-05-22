@@ -1,0 +1,22 @@
+.instructions-details {
+  background: #ececec;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0 auto;
+  padding: 0.3em;
+  width: 93%;
+}
+
+.instructions-title {
+  align-items: flex-end;
+  display: flex;
+  font-size: 26px;
+  font-style: normal;
+  height: 30px;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  margin-bottom: 0;
+  margin-left: 0.4em;
+  width: 138px;
+}

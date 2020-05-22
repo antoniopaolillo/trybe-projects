@@ -1,0 +1,51 @@
+body{
+    background-image: url(background.jpg);
+}
+
+.card-deck{
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cartas{
+    text-align: center;
+    margin: 5px;
+}
+
+.input{
+    text-align: center;
+}
+
+h1{
+    font-size: 70px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.number-of-cards{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 25px;
+    color: white;
+    
+}
+
+.texto{
+    font-size: 25px;
+    color: white;
+}
+
+#card_text{
+    width: 350px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.card-generate-button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}

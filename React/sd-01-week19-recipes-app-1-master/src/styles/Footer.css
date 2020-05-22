@@ -1,0 +1,10 @@
+.Footer_father {
+  align-items: center;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Footer_icon {
+  cursor: pointer;
+}

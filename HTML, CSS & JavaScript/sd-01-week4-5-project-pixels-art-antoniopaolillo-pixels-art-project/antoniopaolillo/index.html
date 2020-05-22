@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>PIXELS ART</title>
+    <link href="https://fonts.googleapis.com/css?family=Notable|Passion+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="criarTabelaPeloOnLoad()">
+
+        <h1 class="cabecalho">PALETA DE CORES</h1>
+
+        <div class="container">
+            <div class="inputs">
+                <span class="texto">Digite número de pixels do quadrado(entre 5 e 50):</span><br>
+                <input type="text" id="tamanhoquadrado"><br>
+
+                <button class="botoes" onclick="gerandoTamanhoQuadrado()">Gerar Tabela</button><br>
+                <button class="botoes" onclick="limparTabela()">Limpar a tabela</button><br>
+                <button class="botoes" onclick="gitHubProfile()">Gerar perfil estilo GitHub</button><br>
+
+                <div class="color">
+                    <span class="textocor">COR SELECIONADA:</span>
+                    <div class="corselecionada"></div>
+                </div>
+            </div>
+
+            <div class="tabelas">
+                <table class="paleta-de-cores">
+                    <tr>
+                        <th class="coresfixas"></th>
+                        <th class="coresfixas"></th>
+                        <th class="coresfixas"></th>
+                        <th class="coresfixas"></th>
+                    </tr>
+                </table>
+
+                <table class="tabelaQueSeraPreenchida">
+                
+                </table><br><br>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

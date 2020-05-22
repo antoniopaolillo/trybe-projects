@@ -1,0 +1,26 @@
+.access-button {
+  background: #86d660;
+  height: 40px;
+  justify-content: center;
+  margin-top: 15px;
+  width: 70px;
+}
+
+.form , .page-login {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-email {
+  border: solid 1px black;
+  margin: 15px;
+}
+
+.input-password {
+  border: solid 1px black;
+}
+
+.login-title {
+  font-size: 10mm;
+}

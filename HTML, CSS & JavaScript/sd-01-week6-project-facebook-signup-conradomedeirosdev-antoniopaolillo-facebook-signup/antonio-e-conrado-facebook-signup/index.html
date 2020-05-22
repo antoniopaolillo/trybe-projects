@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <title>Pagina Facebook</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="content-header">
+            <div>
+                <input class="fb-icon" type="image" src="image/fb-log.svg">
+            </div>
+            <div class="first-input">
+                <div>
+                    <legend id="text-email">Email ou telefone</legend>
+                    <input id="first-email-or-phone" type="text">
+                </div>
+                <div class="input-password">
+                    <legend id="text-password">Senha</legend>
+                    <input id="first-password" type="password">
+                    <a id="button-forget-password" href="#">Esqueceu a senha?</a>
+                </div>
+                <input type="submit" value="Entrar" id="login-button" onclick="validarDadosDeEntrada()"></button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="gradient-page">
+            <div class="section-body">
+                <div class="body-left-side">
+                    <div class="content-left-side">
+                        <div class="text-hero-page">
+                            <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+                                vida.
+                            </p>
+                        </div>
+                        <img id="img-hero-page" src="image/bodyimage.png">
+                    </div>
+                </div>
+                <div class="body-rigth-side">
+                    <div class="content-right-side">
+                        <div class="cta-group">
+                            <div class="cta">
+                                <span>Abra uma conta</span>
+                            </div>
+                            <div class="cta-value">
+                                <span>É rápido e fácil.</span>
+                            </div>
+                        </div>
+                        <form class="form" action="" method="post">
+                            <div class="register-names">
+                                <div class="input-register-name small">
+                                    <input type="text" id='register-name' name='register-name' placeholder="Nome"
+                                        required="required">
+                                </div>
+                                <div class="input-register-last-name small">
+                                    <input type="text" id='register-last-name' name='register-last-name'
+                                        placeholder="Sobrenome" required="required">
+                                </div>
+                            </div>
+                            <div class="validation-email-password">
+                                <div class="input-register-email-or-phone big">
+                                    <input type="text" id='register-email-or-phone' name='register-email-or-phone'
+                                        placeholder="Celular ou email" required="required"><br>
+                                </div>
+                                <div class="input-register-password big">
+                                    <input type="password" id='register-password' name='register-password'
+                                        placeholder="Nova senha" required="required">
+                                </div>
+                            </div>
+                            <div class="data-register-calendar big">
+                                <div class="text-data-register-calendar">
+                                    <span>Data de nascimento</span>
+                                </div>
+                                <input placeholder="dd/mm/aaaa" type="text" id="calendar" required="required" />
+                            </div>
+                            <div class="text-gender-register">
+                                <span>Gênero</span>
+                            </div>
+                            <div class="gender" name="gender" required="required">
+                                <div class="selected-radio-female">
+                                    <input id='female' class="radio" type='radio' value='Feminino' name="radio" />
+                                    <label for='female'>Feminino</label>
+                                </div>
+                                <div class="selected-radio-male">
+                                    <input id='male' class="radio" type='radio' value='Masculino' name="radio" />
+                                    <label for='male'>Masculino</label>
+                                </div>
+                                <div class="selected-radio-personalized">
+                                    <input id='personalized' class="radio" type='radio' value='Personalizado'
+                                        name="radio" />
+                                    <label for='personalized'>Personalizado</label>
+                                </div>
+                                <br>
+                                <input id="btn-help" type="button" value="?" class="question" href="#"></button>
+                                <div class="container-pronome-personalized">
+                                    <select id="personalized-pronome">
+                                        <option>Selecione seu pronome</option>
+                                        <option value="Feminino">Feminino: "Deseje a ela um feliz aniversário!"</option>
+                                        <option value="Masculino">Masculino: "Deseje a ele um feliz aniversário!"
+                                        </option>
+                                        <option value="Neutro">Neutro: Deseje a ele(a) um feliz aniversário!"</option>
+                                    </select>
+                                    <div class="text-gender-selector">
+                                        <span>
+                                            O seu pronome fica visível para todos.
+                                        </span>
+                                    </div>
+                                    <input type="text" id='personalized-gender' name='personalized-gender'
+                                        placeholder="Gênero (Opcional)" required="required">
+                                </div>
+                            </div>
+                            <div class="text-term">
+                                <span>
+                                    Ao clicar em Cadastre-se, você concorda com nossos
+                                    <a id="terms-link" href="https://www.facebook.com/legal/terms/update"
+                                        target="_blank" rel="nofollow">
+                                        Termos
+                                    </a>
+                                    ,
+                                    <a id="privacy-link" href="https://www.facebook.com/about/privacy/update"
+                                        target="_blank" rel="nofollow">
+                                        Política de Dados
+                                    </a>
+                                    e
+                                    <a id="cookies-link" href="https://www.facebook.com/policies/cookies/"
+                                        target="_blank" rel="nofollow">
+                                        Política de Cookies
+                                    </a>
+                                    . Você pode receber notificações por SMS e pode cancelar isso
+                                    quando quiser.
+                                </span>
+                            </div>
+                            <div class="cta-btn">
+                                <input value="Cadastre-se" type="button" id="submit-button"
+                                    onclick="validarDadosCadastro()">
+                            </div>
+                        </form>
+                        <div id="text-page-forms">
+                            <span>
+                                <a id="page-forms-link"
+                                    href="https://www.facebook.com/pages/creation/?ref_type=registration_form"
+                                    target="_blank" rel="nofollow">
+                                    Criar uma Página
+                                </a>
+                                para uma celebridade, banda ou empresa.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="page-footer">
+        <div id="content-language">
+            <ul class="ui-list-language">
+                <li>Português (Brasil)</li>
+                <li><a href="#" class="link1">English (US)</a></li>
+                <li><a href="#" class="link2">Español</a></li>
+                <li><a href="#" class="link3">Français (France)</a></li>
+                <li><a href="#" class="link4">Italiano</a></li>
+                <li><a href="#" class="link5">Deutsch</a></li>
+                <li><a href="#" class="link6">العربية</a></li>
+                <li><a href="#" class="link7">हिन्दी</a></li>
+                <li><a href="#" class="link8">中文(简体)</a></li>
+                <li><a href="#" class="link9">日本語</a></li>
+            </ul>
+        </div>
+        <div id="content-separate"></div>
+        <ul class="ul-list-facebook-config">
+            <li><a href="" class="links">Cadastre-se</a></li>
+            <li><a href="" class="links2">Entrar</a></li>
+            <li><a href="" class="links3">Messenger</a></li>
+            <li><a href="" class="links4">Facebook Lite</a></li>
+            <li><a href="" class="links5">Watch</a></li>
+            <li><a href="" class="links6">Pessoas</a></li>
+            <li><a href="" class="links7">Páginas</a></li>
+            <li><a href="" class="links8">Categorias de Página</a></li>
+            <li><a href="" class="links9">Locais</a></li>
+            <li><a href="" class="links10">Jogos</a></li>
+            <li><a href="" class="links11">Locais</a></li>
+            <li><a href="" class="links12">Marketplace</a></li>
+            <li><a href="" class="links13">Grupos</a></li>
+            <li><a href="" class="links14">Instagram</a></li>
+            <li><a href="" class="links15">Local</a></li>
+            <li><a href="" class="links16">Campanhas de arrecadação de fundos</a></li>
+            <li><a href="" class="links17">Serviços</a></li>
+            <li><a href="" class="links18">Sobre</a></li>
+            <li><a href="" class="links19">Criar anúncio</a></li>
+            <li><a href="" class="links20">Criar Página</a></li>
+            <li><a href="" class="links21">Desenvolvedores</a></li>
+            <li><a href="" class="links22">Carreiras</a></li>
+            <li><a href="" class="links23">Privacidade</a></li>
+            <li><a href="" class="links24">Cookies</a></li>
+            <li><a href="" class="links25">Opções de anúncio<i class="img"></i></a></li>
+            <li><a href="" class="links26">Termos</a></li>
+            <li><a href="" class="links27">Ajuda</a></li>
+            <li><a href="" class="links28">Configurações</a></li>
+            <li><a href="" class="links29">Registro de Atividades</a></li>
+        </ul>
+        <div id="copyright">
+            <span id="copyright-text">
+                <br>Facebook © 2019
+            </span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
